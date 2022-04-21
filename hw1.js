@@ -9,3 +9,12 @@ console.log(footerNodes);
 // let footerChildren = document.getElementsByTagName("footer"); 
 let footerChildren = footer.children; 
 console.log(footerChildren); 
+
+let navLinks = document.getElementsByClassName('nav-link'); 
+console.log(navLinks); 
+
+let ul = document.querySelector('ul'); 
+console.log(ul); 
+
+let aboutLi = ul.childNodes[3]; 
+console.log(aboutLi); 
