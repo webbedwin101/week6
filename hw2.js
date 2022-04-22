@@ -18,3 +18,19 @@ myHobbies.forEach((hobby) => {
     ul.appendChild(document.createElement('li')).innerHTML = hobby; 
 })
 
+const form = document.querySelector('form'); 
+const goBtn = document.getElementById('go');
+const stopBtn = document.querySelector("#stop");
+form.addEventListener("click", stopOrGo);
+function stopOrGo(e) {
+    if (e.target == goBtn){
+        // goBtn.classList.add("go"); 
+        goBtn.className = "go"; 
+    }
+        else if (e.target == stopBtn){
+            // stopBtn.classList.add("stop"); 
+            stopBtn.className ="stop"; 
+        }
+    e.preventDefault();
+    }
+
