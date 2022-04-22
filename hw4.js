@@ -38,3 +38,31 @@ console.log(myFirstName);
 if (myFirstName.includes("E", "e")){
     console.log('Your name contains an \"e\"!');
 } else console.log('Your name does not contain an \"e\"'); 
+
+if (me.hasOwnProperty('canDrink')){
+    console.log("yes");
+    if (me.canDrink == "true"){
+        console.log(`${me.name} can drink`);
+    }else if(me.canDrink = "false"){
+    console.log(`${me.name} cannot drink`);
+    }
+    else console.log('no Drinking property associated with this name'); 
+}
+//returns yes 
+//returns Edwin cannot drink
+
+// if (me.hasOwnProperty('canDrink')){
+//     console.log("yes");
+//     if (me.canDrink == "true"){
+//         function allowDrink(){
+//         return `${this.name} can drink`;
+//     }
+//         console.log(allowDrink());
+//     }   else if(me.canDrink = "false"){
+//             function denyDrink(){
+//             return `${this.name} cannot drink`;
+//             }
+//             console.log(denyDrink());
+//         }
+//     else console.log('no Drinking property associated with this name'); 
+// }
